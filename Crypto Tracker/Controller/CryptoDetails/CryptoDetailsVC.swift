@@ -170,11 +170,13 @@ class CryptoDetailsVC: UIViewController {
             case .notDetermined:
                 notificationCenter.requestAuthorization(options: [.alert, .sound]) { didAllow, error in
                     if didAllow {
-                        self.startMonitoring(
-                            symbol: self.id ?? "Not working",
-                            minRate: Double(self.minimumRate.text(in: self.minimumRate.selectedTextRange!) ?? "") ?? 0.0,
-                            maxRate: Double(self.maximumRate.text(in: self.maximumRate.selectedTextRange!) ?? "") ?? 0.0
-                        )
+                        DispatchQueue.main.async {
+                            self.startMonitoring(
+                                symbol: self.id ?? "Not working",
+                                minRate: Double(self.minimumRate.text(in: self.minimumRate.selectedTextRange!) ?? "") ?? 0.0,
+                                maxRate: Double(self.maximumRate.text(in: self.maximumRate.selectedTextRange!) ?? "") ?? 0.0
+                            )
+                        }
                     }
                 }
             case .denied:
