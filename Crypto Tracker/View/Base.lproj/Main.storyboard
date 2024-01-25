@@ -67,34 +67,94 @@ using mobile or desktop.</string>
                                     <segue destination="faP-TJ-vgT" kind="show" id="Gb5-br-517"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crypto logo" translatesAutoresizingMaskIntoConstraints="NO" id="RNk-So-ZfV">
-                                <rect key="frame" x="85" y="119" width="205" height="181"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stainless steel 2" translatesAutoresizingMaskIntoConstraints="NO" id="RNk-So-ZfV">
+                                <rect key="frame" x="79" y="94" width="217" height="318"/>
                                 <color key="tintColor" red="0.21960784310000001" green="1" blue="1" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="181" id="qLX-uw-njd"/>
+                                    <constraint firstAttribute="width" constant="217" id="Mx8-mB-llx"/>
+                                    <constraint firstAttribute="height" constant="318" id="vf2-Ck-OKB"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard 1" translatesAutoresizingMaskIntoConstraints="NO" id="SFp-U8-sdu">
+                                <rect key="frame" x="226" y="121" width="58" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="4gd-m5-dvu"/>
+                                    <constraint firstAttribute="width" constant="58" id="tkf-6S-PlK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8L-lW-1so">
+                                <rect key="frame" x="240" y="227" width="44" height="135"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="wLK-nP-naC"/>
+                                    <constraint firstAttribute="height" constant="135" id="ynP-8Y-BmF"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="4032778208246041">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chip-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Nq-VN-rdM">
+                                <rect key="frame" x="162" y="335" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="i4d-hR-hcP"/>
+                                    <constraint firstAttribute="height" constant="50" id="yfV-Il-QUW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqE-Nj-jz6">
+                                <rect key="frame" x="97" y="121" width="54" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="LFp-Ts-rSC"/>
+                                    <constraint firstAttribute="width" constant="54" id="RBv-1B-w18"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rustin Wilde">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="19" name="SFPro-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RNk-So-ZfV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="5u8-Vw-3t3"/>
+                            <constraint firstItem="RNk-So-ZfV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0vr-4Q-1Cw"/>
+                            <constraint firstItem="RNk-So-ZfV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="5qa-vt-pQW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SFp-U8-sdu" secondAttribute="trailing" constant="91" id="71l-Gi-dCU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tdg-T2-skL" secondAttribute="trailing" constant="79" id="7GL-7d-gpl"/>
                             <constraint firstItem="Tdg-T2-skL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="I14-o1-v6l"/>
+                            <constraint firstItem="pqE-Nj-jz6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="Kh6-M4-F3R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V8L-lW-1so" secondAttribute="trailing" constant="91" id="MzY-r1-rTf"/>
                             <constraint firstItem="MuW-vY-2ab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="RH5-uc-cGH"/>
                             <constraint firstItem="UgI-QQ-GBj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="TCt-nx-OaP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MuW-vY-2ab" secondAttribute="trailing" constant="30" id="WdW-S0-ScZ"/>
+                            <constraint firstItem="Tdg-T2-skL" firstAttribute="top" secondItem="RNk-So-ZfV" secondAttribute="bottom" constant="8" symbolic="YES" id="e3E-li-V5i"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UgI-QQ-GBj" secondAttribute="trailing" constant="61" id="ewY-kj-LVn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RNk-So-ZfV" secondAttribute="trailing" constant="79" id="gKo-nX-xuJ"/>
+                            <constraint firstItem="9Nq-VN-rdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="iX4-5h-lZC"/>
                             <constraint firstItem="MuW-vY-2ab" firstAttribute="top" secondItem="UgI-QQ-GBj" secondAttribute="bottom" constant="80" id="kZE-wp-SYk"/>
-                            <constraint firstItem="Tdg-T2-skL" firstAttribute="top" secondItem="RNk-So-ZfV" secondAttribute="bottom" constant="120" id="l2I-yT-XNb"/>
-                            <constraint firstItem="RNk-So-ZfV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="oOZ-Rb-EYO"/>
-                            <constraint firstItem="RNk-So-ZfV" firstAttribute="centerX" secondItem="MuW-vY-2ab" secondAttribute="centerX" id="rdb-dD-UkH"/>
+                            <constraint firstItem="SFp-U8-sdu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="oKR-nb-JxD"/>
+                            <constraint firstItem="Tdg-T2-skL" firstAttribute="top" secondItem="V8L-lW-1so" secondAttribute="bottom" constant="58" id="qL3-id-rUK"/>
+                            <constraint firstItem="Tdg-T2-skL" firstAttribute="top" secondItem="9Nq-VN-rdM" secondAttribute="bottom" constant="35" id="vrO-M5-bFh"/>
                             <constraint firstItem="UgI-QQ-GBj" firstAttribute="top" secondItem="Tdg-T2-skL" secondAttribute="bottom" constant="6" id="wQj-L0-eyW"/>
+                            <constraint firstItem="pqE-Nj-jz6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="xzs-jP-y2m"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LuK-Gv-doP"/>
                     <connections>
+                        <outlet property="cardImage" destination="RNk-So-ZfV" id="yG1-Ug-aLo"/>
+                        <outlet property="cardNumber" destination="V8L-lW-1so" id="VKZ-Bz-4Ws"/>
                         <outlet property="onboardingBtn" destination="MuW-vY-2ab" id="gva-7o-DiB"/>
                         <outlet property="onboardingSubtitle" destination="UgI-QQ-GBj" id="Ukl-2W-Vhs"/>
                         <outlet property="onboardingTitle" destination="Tdg-T2-skL" id="Wu4-eY-0np"/>
@@ -465,10 +525,12 @@ using mobile or desktop.</string>
     </scenes>
     <resources>
         <image name="bell.fill" catalog="system" width="123" height="128"/>
-        <image name="crypto logo" width="842" height="814"/>
+        <image name="chip-1" width="2500" height="1820"/>
         <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="mastercard 1" width="192.75599670410156" height="192.75599670410156"/>
         <image name="prof pic" width="640" height="640"/>
         <image name="smallcircle.filled.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="stainless steel 2" width="260" height="320"/>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -1,0 +1,25 @@
+# Ignore build artifacts
+build/
+dist/
+*.exe
+*.dll
+
+# Ignore large binary files (add more file extensions if needed)
+*.zip
+*.tar.gz
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Xcode and Android Studio files
+*.xcodeproj/
+*.xcworkspace/
+.idea/
+
+# Ignore user-specific files
+*.xcuserstate
+*.iml
+
+# CocoaPods
+Pods/
+Podfile.lock
