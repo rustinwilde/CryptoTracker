@@ -14,8 +14,6 @@ import Charts
 class CryptoDetailsVC: UIViewController {
     
     @IBOutlet weak var labelViewRates: UILabel!
-    @IBOutlet weak var minimumRate: UITextField!
-    @IBOutlet weak var maximumRate: UITextField!
     @IBOutlet weak var detailView: UIView!
     @IBOutlet weak var cryptoSymbol: UILabel!
     @IBOutlet weak var cryptoChanges: UILabel!
@@ -24,7 +22,8 @@ class CryptoDetailsVC: UIViewController {
     private var userNotificationCenter: UNUserNotificationCenter
     private var notificationSent = false
     private var subscriptions = Set<AnyCancellable>()
-    
+    private let minRate = CustomTextField(frame: CGRect(x: 16, y: 356, width: 158, height: 34))
+    private let maxRate = CustomTextField(frame: CGRect(x: 204, y: 356, width: 160, height: 34))
     
     var id: String?
     var symbol: String?
@@ -45,6 +44,8 @@ class CryptoDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -84,6 +85,12 @@ class CryptoDetailsVC: UIViewController {
             cryptoChanges.widthAnchor.constraint(equalToConstant: 140),
             cryptoChanges.heightAnchor.constraint(equalToConstant: 24)
         ])
+        
+        minRate.placeholder = "Enter minimum rate"
+        maxRate.placeholder = "Enter maximum rate"
+        view.addSubview(minRate)
+        view.addSubview(maxRate)
+        
     }
     
     @IBAction func trackBtnPressed(_ sender: UIButton) {
@@ -99,7 +106,7 @@ class CryptoDetailsVC: UIViewController {
     func startMonitoring(symbol: String, minRate: Double, maxRate: Double) {
         
         DispatchQueue.main.async {
-            guard let minRateText = self.minimumRate.text, let maxRateText = self.maximumRate.text else {
+            guard let minRateText = self.minRate.text, let maxRateText = self.maxRate.text else {
                 return
             }
             
@@ -171,8 +178,8 @@ class CryptoDetailsVC: UIViewController {
                         DispatchQueue.main.async {
                             self.startMonitoring(
                                 symbol: self.id ?? "Not working",
-                                minRate: Double(self.minimumRate.text(in: self.minimumRate.selectedTextRange!) ?? "") ?? 0.0,
-                                maxRate: Double(self.maximumRate.text(in: self.maximumRate.selectedTextRange!) ?? "") ?? 0.0
+                                minRate: Double(self.minRate.text(in: self.minRate.selectedTextRange!) ?? "") ?? 0.0,
+                                maxRate: Double(self.maxRate.text(in: self.maxRate.selectedTextRange!) ?? "") ?? 0.0
                             )
                         }
                     }
@@ -183,8 +190,8 @@ class CryptoDetailsVC: UIViewController {
                 DispatchQueue.main.async {
                     self.startMonitoring(
                         symbol: self.id ?? "Not working",
-                        minRate: Double(self.minimumRate.text(in: self.minimumRate.selectedTextRange!) ?? "") ?? 0.0,
-                        maxRate: Double(self.maximumRate.text(in: self.maximumRate.selectedTextRange!) ?? "") ?? 0.0
+                        minRate: Double(self.minRate.text(in: self.minRate.selectedTextRange!) ?? "") ?? 0.0,
+                        maxRate: Double(self.maxRate.text(in: self.maxRate.selectedTextRange!) ?? "") ?? 0.0
                     )
                 }
             default:

@@ -409,6 +409,7 @@ using mobile or desktop.</string>
                                     <constraint firstAttribute="height" constant="260" id="FEb-HA-Bnr"/>
                                     <constraint firstItem="r6Q-Q6-4S8" firstAttribute="leading" secondItem="DjV-8H-4R0" secondAttribute="leading" constant="8" id="Gkw-bq-YSt"/>
                                     <constraint firstItem="lxf-QN-ebf" firstAttribute="top" secondItem="DjV-8H-4R0" secondAttribute="top" constant="52" id="Iso-NX-zBt"/>
+                                    <constraint firstItem="cX7-Ga-fay" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DjV-8H-4R0" secondAttribute="leading" constant="20" symbolic="YES" id="cOd-a9-g2W"/>
                                     <constraint firstAttribute="trailing" secondItem="lxf-QN-ebf" secondAttribute="trailing" constant="20" id="f51-jQ-hRS"/>
                                     <constraint firstItem="r6Q-Q6-4S8" firstAttribute="top" secondItem="DjV-8H-4R0" secondAttribute="top" constant="8" id="j99-TW-pCc"/>
                                     <constraint firstAttribute="width" constant="289" id="jAZ-Sw-Bw7"/>
@@ -434,60 +435,26 @@ using mobile or desktop.</string>
                                     <action selector="trackBtnPressed:" destination="GSc-jL-1tM" eventType="touchUpInside" id="Trx-3F-aMm"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter maximum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkg-w7-7IV">
-                                <rect key="frame" x="220" y="377" width="125" height="34"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLM-6c-vcX">
+                                <rect key="frame" x="16" y="419" width="343" height="236"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="9Pu-C2-jyy"/>
+                                    <constraint firstAttribute="height" constant="236" id="00F-lZ-fBO"/>
+                                    <constraint firstAttribute="width" constant="343" id="i98-jc-egx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wJ-cs-Thc">
-                                <rect key="frame" x="226" y="347" width="109" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="109" id="rdL-NK-H3z"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter minimum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k2z-SZ-Sla">
-                                <rect key="frame" x="30" y="377" width="125" height="34"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="3iE-xh-SUR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEg-Fs-YeI">
-                                <rect key="frame" x="40" y="347" width="104" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="104" id="FHD-6c-kdv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FOa-qo-7VM"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FOa-qo-7VM" firstAttribute="trailing" secondItem="kkg-w7-7IV" secondAttribute="trailing" constant="30" id="6Pz-kz-OxV"/>
-                            <constraint firstItem="FOa-qo-7VM" firstAttribute="trailing" secondItem="5wJ-cs-Thc" secondAttribute="trailing" constant="40" id="88r-Vq-YXD"/>
+                            <constraint firstItem="F2m-gp-aeT" firstAttribute="top" secondItem="VLM-6c-vcX" secondAttribute="bottom" constant="30" id="4q0-yI-ed4"/>
+                            <constraint firstItem="FOa-qo-7VM" firstAttribute="trailing" secondItem="VLM-6c-vcX" secondAttribute="trailing" constant="16" id="9DO-kO-RSr"/>
                             <constraint firstItem="DjV-8H-4R0" firstAttribute="leading" secondItem="FOa-qo-7VM" secondAttribute="leading" constant="43" id="IwA-lU-92e"/>
-                            <constraint firstItem="vEg-Fs-YeI" firstAttribute="top" secondItem="DjV-8H-4R0" secondAttribute="bottom" constant="37" id="K6Q-gL-WvV"/>
-                            <constraint firstItem="kkg-w7-7IV" firstAttribute="top" secondItem="5wJ-cs-Thc" secondAttribute="bottom" constant="9" id="MZS-et-eaV"/>
-                            <constraint firstItem="k2z-SZ-Sla" firstAttribute="leading" secondItem="FOa-qo-7VM" secondAttribute="leading" constant="30" id="Ma3-de-1Dc"/>
-                            <constraint firstItem="k2z-SZ-Sla" firstAttribute="top" secondItem="vEg-Fs-YeI" secondAttribute="bottom" constant="9" id="S7h-ak-pTd"/>
                             <constraint firstItem="DjV-8H-4R0" firstAttribute="top" secondItem="FOa-qo-7VM" secondAttribute="top" constant="50" id="dxU-bU-mHX"/>
                             <constraint firstItem="FOa-qo-7VM" firstAttribute="trailing" secondItem="DjV-8H-4R0" secondAttribute="trailing" constant="43" id="eAK-hR-wgJ"/>
                             <constraint firstItem="F2m-gp-aeT" firstAttribute="leading" secondItem="FOa-qo-7VM" secondAttribute="leading" constant="16" id="iTV-Te-fuf"/>
                             <constraint firstItem="FOa-qo-7VM" firstAttribute="trailing" secondItem="F2m-gp-aeT" secondAttribute="trailing" constant="16" id="lAT-oy-zBq"/>
-                            <constraint firstItem="5wJ-cs-Thc" firstAttribute="top" secondItem="DjV-8H-4R0" secondAttribute="bottom" constant="37" id="oov-hv-xv8"/>
-                            <constraint firstItem="vEg-Fs-YeI" firstAttribute="leading" secondItem="FOa-qo-7VM" secondAttribute="leading" constant="40" id="q35-Il-ztV"/>
-                            <constraint firstItem="F2m-gp-aeT" firstAttribute="top" secondItem="k2z-SZ-Sla" secondAttribute="bottom" constant="274" id="yUC-yO-f5Z"/>
+                            <constraint firstItem="FOa-qo-7VM" firstAttribute="bottom" secondItem="F2m-gp-aeT" secondAttribute="bottom" constant="13" id="vAj-B1-VMf"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -497,8 +464,6 @@ using mobile or desktop.</string>
                         <outlet property="cryptoSymbol" destination="r6Q-Q6-4S8" id="xkg-ce-vkT"/>
                         <outlet property="detailView" destination="DjV-8H-4R0" id="OBx-th-xag"/>
                         <outlet property="labelViewRates" destination="cX7-Ga-fay" id="DIr-AL-2iJ"/>
-                        <outlet property="maximumRate" destination="kkg-w7-7IV" id="c7r-HG-li7"/>
-                        <outlet property="minimumRate" destination="k2z-SZ-Sla" id="j3v-Ro-0KJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="158-lO-w1i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -532,6 +497,9 @@ using mobile or desktop.</string>
         <image name="prof pic" width="640" height="640"/>
         <image name="smallcircle.filled.circle.fill" catalog="system" width="128" height="123"/>
         <image name="stainless steel 2" width="260" height="320"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
