@@ -257,7 +257,7 @@ using mobile or desktop.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-nh-soN">
-                                <rect key="frame" x="45" y="158.66666666666666" width="275" height="77.666666666666657"/>
+                                <rect key="frame" x="45" y="158" width="275" height="77.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="LwW-rq-4cm"/>
                                 </constraints>
@@ -266,7 +266,7 @@ using mobile or desktop.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkF-Ou-BSO">
-                                <rect key="frame" x="136" y="129" width="103" height="21.666666666666657"/>
+                                <rect key="frame" x="136" y="129" width="103" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="103" id="bIz-HH-BPh"/>
                                 </constraints>

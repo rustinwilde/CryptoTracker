@@ -6,7 +6,6 @@ class CryptoManager {
     
     static let shared = CryptoManager()
     var timer: Timer?
-    private var cancellables: Set<AnyCancellable> = []
         
     func fetchCryptoData(onCompletion: @escaping ([CryptoData]) -> ()){
         let cryptoUrl = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
@@ -19,6 +18,7 @@ class CryptoManager {
                 return
             }
             onCompletion(cryptoData)
+            print("Closure - \(cryptoData)")
         }
         task.resume()
     }
@@ -101,8 +101,6 @@ class CryptoManager {
             })
             .eraseToAnyPublisher()
     }
-    private var subscriptions = Set<AnyCancellable>()
-    
 }
 
 
