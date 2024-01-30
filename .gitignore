@@ -12,9 +12,7 @@ dist/
 .DS_Store
 
 # Ignore Xcode and Android Studio files
-*.xcodeproj/
-*.xcworkspace/
-.idea/
+
 
 # Ignore user-specific files
 *.xcuserstate
