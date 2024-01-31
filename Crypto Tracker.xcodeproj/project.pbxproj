@@ -20,9 +20,6 @@
 		76C95EC02A55826000E8A53F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C95EBE2A55826000E8A53F /* Main.storyboard */; };
 		76C95EC22A55826300E8A53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C95EC12A55826300E8A53F /* Assets.xcassets */; };
 		76C95EC52A55826300E8A53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C95EC32A55826300E8A53F /* LaunchScreen.storyboard */; };
-		76C95ED02A55826300E8A53F /* Crypto_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C95ECF2A55826300E8A53F /* Crypto_TrackerTests.swift */; };
-		76C95EDA2A55826300E8A53F /* Crypto_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C95ED92A55826300E8A53F /* Crypto_TrackerUITests.swift */; };
-		76C95EDC2A55826300E8A53F /* Crypto_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C95EDB2A55826300E8A53F /* Crypto_TrackerUITestsLaunchTests.swift */; };
 		76C95EEA2A55958300E8A53F /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C95EE92A55958300E8A53F /* Background.swift */; };
 		76C95EEC2A55AB2E00E8A53F /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C95EEB2A55AB2E00E8A53F /* OnboardingVC.swift */; };
 		76C95F6F2A55B5B800E8A53F /* NewYork.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76C95F6E2A55B5B800E8A53F /* NewYork.ttf */; };
@@ -123,10 +120,7 @@
 		76C95EC42A55826300E8A53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76C95EC62A55826300E8A53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C95ECB2A55826300E8A53F /* Crypto TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76C95ECF2A55826300E8A53F /* Crypto_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_TrackerTests.swift; sourceTree = "<group>"; };
 		76C95ED52A55826300E8A53F /* Crypto TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76C95ED92A55826300E8A53F /* Crypto_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_TrackerUITests.swift; sourceTree = "<group>"; };
-		76C95EDB2A55826300E8A53F /* Crypto_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		76C95EE92A55958300E8A53F /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		76C95EEB2A55AB2E00E8A53F /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		76C95F6E2A55B5B800E8A53F /* NewYork.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewYork.ttf; sourceTree = "<group>"; };
@@ -198,8 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				76C95EB72A55826000E8A53F /* Crypto Tracker */,
-				76C95ECE2A55826300E8A53F /* Crypto TrackerTests */,
-				76C95ED82A55826300E8A53F /* Crypto TrackerUITests */,
 				76C95EEF2A55ADE800E8A53F /* Fonts */,
 				76C95EB62A55826000E8A53F /* Products */,
 				1D3553ADA63413A773F19AE8 /* Pods */,
@@ -230,23 +222,6 @@
 				76C95EC62A55826300E8A53F /* Info.plist */,
 			);
 			path = "Crypto Tracker";
-			sourceTree = "<group>";
-		};
-		76C95ECE2A55826300E8A53F /* Crypto TrackerTests */ = {
-			isa = PBXGroup;
-			children = (
-				76C95ECF2A55826300E8A53F /* Crypto_TrackerTests.swift */,
-			);
-			path = "Crypto TrackerTests";
-			sourceTree = "<group>";
-		};
-		76C95ED82A55826300E8A53F /* Crypto TrackerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				76C95ED92A55826300E8A53F /* Crypto_TrackerUITests.swift */,
-				76C95EDB2A55826300E8A53F /* Crypto_TrackerUITestsLaunchTests.swift */,
-			);
-			path = "Crypto TrackerUITests";
 			sourceTree = "<group>";
 		};
 		76C95EEF2A55ADE800E8A53F /* Fonts */ = {
@@ -685,7 +660,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7696B4092A58914300904EB1 /* CryptoManager.swift in Sources */,
-				76C95ED02A55826300E8A53F /* Crypto_TrackerTests.swift in Sources */,
 				76C960822A5722C500E8A53F /* CryptoTableViewCell.swift in Sources */,
 				76F858BB2A6068EA00C96D42 /* CryptoDetailsVC.swift in Sources */,
 			);
@@ -697,8 +671,6 @@
 			files = (
 				76F858BC2A6068EA00C96D42 /* CryptoDetailsVC.swift in Sources */,
 				76C960832A5722C500E8A53F /* CryptoTableViewCell.swift in Sources */,
-				76C95EDC2A55826300E8A53F /* Crypto_TrackerUITestsLaunchTests.swift in Sources */,
-				76C95EDA2A55826300E8A53F /* Crypto_TrackerUITests.swift in Sources */,
 				7696B40A2A58914300904EB1 /* CryptoManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

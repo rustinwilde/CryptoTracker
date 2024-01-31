@@ -21,7 +21,6 @@ class HomeVCController: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
     
     var cryptoList = [CryptoData]()
-    var isExpanded = false
     
     var animatedBackgroundGradient = AnimatedQradientView()
     
